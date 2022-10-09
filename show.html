@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>I Love You ❤️</title>
+    <title>小姐姐 您好呀！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <style>
@@ -97,42 +97,22 @@
 
 <body>
 <div class="cs">
-    <img src="images/lover.jpg" id="logo">
+    <img src="images/WechatIMG15.jpeg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
-    We fell in love！
+    别想多哦，我的目的很简单且单纯 ～
     <br/>
     <span id="span_dt_dt"></span>
 </p>
-<script language="javascript">
-    function show_date_time() {
-        window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("11/25/2020 00:00:00"); //这个日期是可以修改的
-        today = new Date();
-        timeold = (today.getTime() - BirthDay.getTime());
-        sectimeold = timeold / 1000
-        secondsold = Math.floor(sectimeold);
-        msPerDay = 24 * 60 * 60 * 1000
-        e_daysold = timeold / msPerDay
-        daysold = Math.floor(e_daysold);
-        e_hrsold = (e_daysold - daysold) * 24;
-        hrsold = Math.floor(e_hrsold);
-        e_minsold = (e_hrsold - hrsold) * 60;
-        minsold = Math.floor((e_hrsold - hrsold) * 60);
-        seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
-    }
 
-    show_date_time();
-</script>
 <script>
     var S = {
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             //想说的话
-            S.UI.simulate("孔镇坤|I'm|某某某|Nice|to|Meet|You|#countdown 3|#time");
+            S.UI.simulate("|LiuLu|Nice|to|Meet|You|#countdown 4|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
